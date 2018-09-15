@@ -13,9 +13,10 @@
 	
 	<link rel="stylesheet" type="text/css" href="static/css/style.css">
 	<script type="text/javascript" src="webjars/jquery/3.3.1/jquery.js"></script>
-
+	
+	
 </head>
-<body>
+<body onload="countDown()">
 	
 	<div role="navigation">
 		<div class="navbar navbar-inverse">
@@ -32,7 +33,7 @@
 	<c:choose>
 		<c:when test="${mode == 'MODE_HOME'}">
 				<div class="container" id="homeDiv">
-					<div class="jumbotron text-center">
+					<div class="jumbotron">
 						<h1>Welcome to Task Manager</h1>
 					</div>
 				</div>
